@@ -1,4 +1,4 @@
-** Relation Alignment **
+**Relation Alignment**
 
 Our current goal is to generate a list of correspondences between the set of relations of two ontology. We approached by following a rule-based technique, where we exploited element- level schema model to see how the entities are incident to the relations in the graph. At first, we calculated the incidence score of all the entities to each relation, which tells us the kind of relation/activity/ any entity is related to. List of incidence score for all relations are fed into the matching function. Also, a precomputed mapping between the entities of the two graphs are also passed as input data. These mapping between can include all the entities or a subset of entities. The matching function will output a confusion matrix/list of scores showing the confidence score between any pair of relations, where each relation belongs to separate ontology. The matching score between any two relation is calculated by taking the number of common incident nodes with respect to the total number of incident nodes of them. In this work, we leveraged schema level information of the graphs by using a set of rules.
 
