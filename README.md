@@ -4,3 +4,4 @@ Knowledge graph alignment(KGA) is the process of discovering mappings, i.e. to f
 
 Here, we developed a `supervised network alignment approach` to discover mappings between equivalent entities and relations. We used lexical matching, network topological information and matrix factorization techniques to compute similarity scores.
 
+We implemented two distinct models for calculating `relation similarity` and `vertex similarity`. Both the models uses the structural information of the graph.
